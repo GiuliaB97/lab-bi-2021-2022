@@ -1,0 +1,1408 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1217.2247                               -->
+<workbook original-version='18.1' source-build='2021.3.6 (20213.21.1217.2247)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ft_ticket (exam202201.ft_ticket)+ (biexam)' inline='true' name='federated.052yu6a0h0fyjm14bik7d0f96o7q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='137.204.78.85' name='postgres.0v78oom09l1vnz1e2sieb19nedm9'>
+            <connection authentication='username-password' class='postgres' dbname='biexam' one-time-sql='' port='5432' server='137.204.78.85' username='biexam' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_customer' table='[exam202201].[dt_customer]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='ft_ticket' table='[exam202201].[ft_ticket]' type='table' />
+          <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_customer' table='[exam202201].[dt_customer]' type='table' />
+          <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_date' table='[exam202201].[dt_date]' type='table' />
+          <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_flight' table='[exam202201].[dt_flight]' type='table' />
+          <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_date1' table='[exam202201].[dt_date]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[codairportarrival]' value='[dt_flight].[codairportarrival]' />
+          <map key='[codairportdeparture]' value='[dt_flight].[codairportdeparture]' />
+          <map key='[date (dt_date1)]' value='[dt_date1].[date]' />
+          <map key='[date]' value='[dt_date].[date]' />
+          <map key='[delayonarrival]' value='[dt_flight].[delayonarrival]' />
+          <map key='[delayondeparture]' value='[dt_flight].[delayondeparture]' />
+          <map key='[fiscalcode]' value='[dt_customer].[fiscalcode]' />
+          <map key='[flightcode]' value='[dt_flight].[flightcode]' />
+          <map key='[fullname]' value='[dt_customer].[fullname]' />
+          <map key='[gender]' value='[dt_customer].[gender]' />
+          <map key='[id (dt_customer)]' value='[dt_customer].[id]' />
+          <map key='[id (dt_date)]' value='[dt_date].[id]' />
+          <map key='[id (dt_date1)]' value='[dt_date1].[id]' />
+          <map key='[id]' value='[dt_flight].[id]' />
+          <map key='[idcustomer]' value='[ft_ticket].[idcustomer]' />
+          <map key='[iddateofbirth]' value='[dt_customer].[iddateofbirth]' />
+          <map key='[iddateofflight]' value='[dt_flight].[iddateofflight]' />
+          <map key='[idflight]' value='[ft_ticket].[idflight]' />
+          <map key='[month (dt_date1)]' value='[dt_date1].[month]' />
+          <map key='[month]' value='[dt_date].[month]' />
+          <map key='[numbaggage]' value='[ft_ticket].[numbaggage]' />
+          <map key='[price]' value='[ft_ticket].[price]' />
+          <map key='[priority]' value='[ft_ticket].[priority]' />
+          <map key='[week (dt_date1)]' value='[dt_date1].[week]' />
+          <map key='[week]' value='[dt_date].[week]' />
+          <map key='[year (dt_date1)]' value='[dt_date1].[year]' />
+          <map key='[year]' value='[dt_date].[year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>idcustomer</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[idcustomer]</local-name>
+            <parent-name>[ft_ticket]</parent-name>
+            <remote-alias>idcustomer</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idflight</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[idflight]</local-name>
+            <parent-name>[ft_ticket]</parent-name>
+            <remote-alias>idflight</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[priority]</local-name>
+            <parent-name>[ft_ticket]</parent-name>
+            <remote-alias>priority</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[ft_ticket]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numbaggage</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[numbaggage]</local-name>
+            <parent-name>[ft_ticket]</parent-name>
+            <remote-alias>numbaggage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (dt_customer)]</local-name>
+            <parent-name>[dt_customer]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fullname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fullname]</local-name>
+            <parent-name>[dt_customer]</parent-name>
+            <remote-alias>fullname</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[dt_customer]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iddateofbirth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[iddateofbirth]</local-name>
+            <parent-name>[dt_customer]</parent-name>
+            <remote-alias>iddateofbirth</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiscalcode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fiscalcode]</local-name>
+            <parent-name>[dt_customer]</parent-name>
+            <remote-alias>fiscalcode</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (dt_date)]</local-name>
+            <parent-name>[dt_date]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[dt_date]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[week]</local-name>
+            <parent-name>[dt_date]</parent-name>
+            <remote-alias>week</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[dt_date]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[dt_date]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flightcode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[flightcode]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>flightcode</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iddateofflight</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[iddateofflight]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>iddateofflight</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delayondeparture</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[delayondeparture]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>delayondeparture</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delayonarrival</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[delayonarrival]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>delayonarrival</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codairportdeparture</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[codairportdeparture]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>codairportdeparture</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codairportarrival</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[codairportarrival]</local-name>
+            <parent-name>[dt_flight]</parent-name>
+            <remote-alias>codairportarrival</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (dt_date1)]</local-name>
+            <parent-name>[dt_date1]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date (dt_date1)]</local-name>
+            <parent-name>[dt_date1]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[week (dt_date1)]</local-name>
+            <parent-name>[dt_date1]</parent-name>
+            <remote-alias>week</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month (dt_date1)]</local-name>
+            <parent-name>[dt_date1]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>7</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[year (dt_date1)]</local-name>
+            <parent-name>[dt_date1]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TotalDelay' datatype='integer' name='[Calculation_977281187146940425]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[delayonarrival]+[delayondeparture]' />
+      </column>
+      <column caption='Date Week Flight' datatype='date' name='[Date (Dt Date1) (copia)_977281187144658948]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[date (dt_date1)]' />
+      </column>
+      <column caption='Date Week Customer' datatype='date' name='[Date Month (copia)_977281187143794688]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[date]' />
+      </column>
+      <column caption='Fiscalcode (week)' datatype='string' name='[Fiscalcode (copia)_977281187144134658]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[fiscalcode]' />
+      </column>
+      <column caption='Fiscalcode (month)' datatype='string' name='[Fiscalcode (week) (copia)_977281187144216579]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[fiscalcode]' />
+      </column>
+      <column caption='Flightcode Week Flight' datatype='string' name='[Flightcode (copia)_977281187145814022]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[flightcode]' />
+      </column>
+      <column caption='Flightcode Month Flight' datatype='string' name='[Flightcode (copia)_977281187145928711]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[flightcode]' />
+      </column>
+      <column caption='Flightcode Arrival Flight' datatype='string' name='[Flightcode (copia)_977281187146113032]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[flightcode]' />
+      </column>
+      <column caption='TotalDelay (bin)' datatype='integer' name='[TotalDelay (contenitore)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_977281187146940425]' peg='0' size='5' />
+      </column>
+      <column caption='Year Week Flight' datatype='integer' name='[Year (Dt Date1) (copia)_977281187144658949]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[year (dt_date1)]' />
+      </column>
+      <column caption='Year Week Customer' datatype='integer' name='[Year Month (copia)_977281187143794689]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[year]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='dt_customer' datatype='table' name='[__tableau_internal_object_id__].[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dt_date_flight' datatype='table' name='[__tableau_internal_object_id__].[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dt_date_customer' datatype='table' name='[__tableau_internal_object_id__].[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dt_flight' datatype='table' name='[__tableau_internal_object_id__].[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='ft_ticket' datatype='table' name='[__tableau_internal_object_id__].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' role='measure' type='quantitative' />
+      <column caption='Codairportarrival' datatype='string' name='[codairportarrival]' role='dimension' type='nominal' />
+      <column caption='Codairportdeparture' datatype='string' name='[codairportdeparture]' role='dimension' type='nominal' />
+      <column caption='Date Month Flight' datatype='date' name='[date (dt_date1)]' role='dimension' type='ordinal' />
+      <column caption='Date Month Customer' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Delayonarrival' datatype='integer' name='[delayonarrival]' role='measure' type='ordinal' />
+      <column caption='Delayondeparture' datatype='integer' name='[delayondeparture]' role='measure' type='ordinal' />
+      <column caption='Fiscalcode' datatype='string' name='[fiscalcode]' role='dimension' type='nominal' />
+      <column caption='Flightcode Departure Flight' datatype='string' name='[flightcode]' role='dimension' type='nominal' />
+      <column caption='Fullname' datatype='string' name='[fullname]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Id (Dt Customer)' datatype='integer' hidden='true' name='[id (dt_customer)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id (Dt Date)' datatype='integer' hidden='true' name='[id (dt_date)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id (Dt Date1)' datatype='integer' hidden='true' name='[id (dt_date1)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Id' datatype='integer' hidden='true' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Idcustomer' datatype='integer' hidden='true' name='[idcustomer]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Iddateofbirth' datatype='integer' hidden='true' name='[iddateofbirth]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Iddateofflight' datatype='integer' hidden='true' name='[iddateofflight]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Idflight' datatype='integer' hidden='true' name='[idflight]' role='dimension' type='ordinal' />
+      <column caption='Month Flight' datatype='string' name='[month (dt_date1)]' role='dimension' type='nominal' />
+      <column caption='Month Customer' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Numbaggage' datatype='integer' name='[numbaggage]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Priority' datatype='string' name='[priority]' role='dimension' type='nominal' />
+      <column caption='Week Flight' datatype='integer' name='[week (dt_date1)]' role='dimension' type='ordinal' />
+      <column caption='Week Customer' datatype='integer' name='[week]' role='dimension' type='ordinal' />
+      <column caption='Year Month Flight' datatype='integer' name='[year (dt_date1)]' role='dimension' type='ordinal' />
+      <column caption='Year Month Customer' datatype='integer' name='[year]' role='dimension' type='ordinal' />
+      <drill-paths>
+        <drill-path name='Codairportarrival Flight H'>
+          <field>[codairportarrival]</field>
+          <field>[Flightcode (copia)_977281187146113032]</field>
+        </drill-path>
+        <drill-path name='Codairportdeparture Flight H'>
+          <field>[codairportdeparture]</field>
+          <field>[flightcode]</field>
+        </drill-path>
+        <drill-path name='Date Month Customer H'>
+          <field>[year]</field>
+          <field>[month]</field>
+          <field>[date]</field>
+          <field>[Fiscalcode (week) (copia)_977281187144216579]</field>
+        </drill-path>
+        <drill-path name='Date Month Flight H'>
+          <field>[year (dt_date1)]</field>
+          <field>[month (dt_date1)]</field>
+          <field>[date (dt_date1)]</field>
+          <field>[Flightcode (copia)_977281187145928711]</field>
+        </drill-path>
+        <drill-path name='Date Week Flight H'>
+          <field>[Year (Dt Date1) (copia)_977281187144658949]</field>
+          <field>[week (dt_date1)]</field>
+          <field>[Date (Dt Date1) (copia)_977281187144658948]</field>
+          <field>[Flightcode (copia)_977281187145814022]</field>
+        </drill-path>
+        <drill-path name='Date Year Customer H'>
+          <field>[Year Month (copia)_977281187143794689]</field>
+          <field>[week]</field>
+          <field>[Date Month (copia)_977281187143794688]</field>
+          <field>[Fiscalcode (copia)_977281187144134658]</field>
+        </drill-path>
+        <drill-path name='Degenerate Dimensions'>
+          <field>[priority]</field>
+        </drill-path>
+        <drill-path name='Gender Customer H'>
+          <field>[gender]</field>
+          <field>[fiscalcode]</field>
+        </drill-path>
+      </drill-paths>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Customer' role='dimensions'>
+        <folder-item name='[fullname]' type='field' />
+        <folder-item name='Date Month Customer H' type='drillpath' />
+        <folder-item name='Date Year Customer H' type='drillpath' />
+        <folder-item name='Gender Customer H' type='drillpath' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Flight' role='dimensions'>
+        <folder-item name='Codairportarrival Flight H' type='drillpath' />
+        <folder-item name='Codairportdeparture Flight H' type='drillpath' />
+        <folder-item name='Date Month Flight H' type='drillpath' />
+        <folder-item name='Date Week Flight H' type='drillpath' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Flight' role='measures'>
+        <folder-item name='[delayonarrival]' type='field' />
+        <folder-item name='[delayondeparture]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Customer'>
+          <folder-item name='[fullname]' type='field' />
+          <folder-item name='Date Month Customer H' type='drillpath' />
+          <folder-item name='Date Year Customer H' type='drillpath' />
+          <folder-item name='Gender Customer H' type='drillpath' />
+        </folder>
+        <folder name='Flight'>
+          <folder-item name='[delayonarrival]' type='field' />
+          <folder-item name='[delayondeparture]' type='field' />
+          <folder-item name='Codairportarrival Flight H' type='drillpath' />
+          <folder-item name='Codairportdeparture Flight H' type='drillpath' />
+          <folder-item name='Date Month Flight H' type='drillpath' />
+          <folder-item name='Date Week Flight H' type='drillpath' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='it_IT' class='hyper' dbname='C:/Users/giuliabrugnatti/Desktop/lab-bi-2021/BI-lab/Tableau/Soluzioni Gallinucci/ft_ticket_ex.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/04/2022 04:22:18 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA' table='[Extract].[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733' table='[Extract].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' type='table' />
+            <relation name='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA' table='[Extract].[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]' type='table' />
+            <relation name='dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA' table='[Extract].[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]' type='table' />
+            <relation name='dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295' table='[Extract].[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]' type='table' />
+            <relation name='dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158' table='[Extract].[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[codairportarrival]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[codairportarrival]' />
+            <map key='[codairportdeparture]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[codairportdeparture]' />
+            <map key='[date (dt_date1)]' value='[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158].[date]' />
+            <map key='[date]' value='[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA].[date]' />
+            <map key='[delayonarrival]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[delayonarrival]' />
+            <map key='[delayondeparture]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[delayondeparture]' />
+            <map key='[fiscalcode]' value='[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA].[fiscalcode]' />
+            <map key='[flightcode]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[flightcode]' />
+            <map key='[fullname]' value='[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA].[fullname]' />
+            <map key='[gender]' value='[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA].[gender]' />
+            <map key='[id (dt_customer)]' value='[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA].[id]' />
+            <map key='[id (dt_date)]' value='[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA].[id]' />
+            <map key='[id (dt_date1)]' value='[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158].[id]' />
+            <map key='[id]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[id]' />
+            <map key='[idcustomer]' value='[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733].[idcustomer]' />
+            <map key='[iddateofbirth]' value='[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA].[iddateofbirth]' />
+            <map key='[iddateofflight]' value='[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295].[iddateofflight]' />
+            <map key='[idflight]' value='[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733].[idflight]' />
+            <map key='[month (dt_date1)]' value='[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158].[month]' />
+            <map key='[month]' value='[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA].[month]' />
+            <map key='[numbaggage]' value='[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733].[numbaggage]' />
+            <map key='[price]' value='[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733].[price]' />
+            <map key='[priority]' value='[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733].[priority]' />
+            <map key='[week (dt_date1)]' value='[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158].[week]' />
+            <map key='[week]' value='[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA].[week]' />
+            <map key='[year (dt_date1)]' value='[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158].[year]' />
+            <map key='[year]' value='[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA].[year]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='ft_ticket (exam202201.ft_ticket)+ (biexam)' increment-value='%null%' refresh-type='create' rows-inserted='103490' timestamp-start='2022-02-04 16:22:12.528' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>idcustomer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idcustomer]</local-name>
+              <parent-name>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</parent-name>
+              <remote-alias>idcustomer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ft_ticket</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2510</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>idflight</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[idflight]</local-name>
+              <parent-name>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</parent-name>
+              <remote-alias>idflight</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ft_ticket</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>priority</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[priority]</local-name>
+              <parent-name>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</parent-name>
+              <remote-alias>priority</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ft_ticket</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ft_ticket</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numbaggage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[numbaggage]</local-name>
+              <parent-name>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</parent-name>
+              <remote-alias>numbaggage</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ft_ticket</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (dt_customer)]</local-name>
+              <parent-name>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dt_customer</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>false</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fullname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fullname]</local-name>
+              <parent-name>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</parent-name>
+              <remote-alias>fullname</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dt_customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dt_customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>iddateofbirth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[iddateofbirth]</local-name>
+              <parent-name>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</parent-name>
+              <remote-alias>iddateofbirth</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dt_customer</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5289</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fiscalcode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fiscalcode]</local-name>
+              <parent-name>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</parent-name>
+              <remote-alias>fiscalcode</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dt_customer</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (dt_date)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dt_date</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44195</approx-count>
+              <contains-null>false</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dt_date</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>44195</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[week]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</parent-name>
+              <remote-alias>week</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dt_date</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dt_date</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4051</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dt_date</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dt_flight</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>false</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>flightcode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[flightcode]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>flightcode</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dt_flight</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>iddateofflight</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[iddateofflight]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>iddateofflight</remote-alias>
+              <ordinal>17</ordinal>
+              <family>dt_flight</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delayondeparture</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delayondeparture]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>delayondeparture</remote-alias>
+              <ordinal>18</ordinal>
+              <family>dt_flight</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delayonarrival</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delayonarrival]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>delayonarrival</remote-alias>
+              <ordinal>19</ordinal>
+              <family>dt_flight</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codairportdeparture</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[codairportdeparture]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>codairportdeparture</remote-alias>
+              <ordinal>20</ordinal>
+              <family>dt_flight</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codairportarrival</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[codairportarrival]</local-name>
+              <parent-name>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</parent-name>
+              <remote-alias>codairportarrival</remote-alias>
+              <ordinal>21</ordinal>
+              <family>dt_flight</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id (dt_date1)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>22</ordinal>
+              <family>dt_date1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44195</approx-count>
+              <contains-null>false</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date (dt_date1)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>dt_date1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>44195</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[week (dt_date1)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</parent-name>
+              <remote-alias>week</remote-alias>
+              <ordinal>24</ordinal>
+              <family>dt_date1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[month (dt_date1)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>25</ordinal>
+              <family>dt_date1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3810</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year (dt_date1)]</local-name>
+              <parent-name>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>26</ordinal>
+              <family>dt_date1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id (dt_date1)' />
+        <field-sort-custom-order field='date (dt_date1)' />
+        <field-sort-custom-order field='week (dt_date1)' />
+        <field-sort-custom-order field='month (dt_date1)' />
+        <field-sort-custom-order field='year (dt_date1)' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dt_customer' id='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA'>
+            <properties context=''>
+              <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_customer' table='[exam202201].[dt_customer]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA' table='[Extract].[dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA]' type='table' />
+            </properties>
+          </object>
+          <object caption='dt_date_flight' id='dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158'>
+            <properties context=''>
+              <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_date1' table='[exam202201].[dt_date]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158' table='[Extract].[dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158]' type='table' />
+            </properties>
+          </object>
+          <object caption='dt_date_customer' id='dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA'>
+            <properties context=''>
+              <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_date' table='[exam202201].[dt_date]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA' table='[Extract].[dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA]' type='table' />
+            </properties>
+          </object>
+          <object caption='dt_flight' id='dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295'>
+            <properties context=''>
+              <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='dt_flight' table='[exam202201].[dt_flight]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295' table='[Extract].[dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295]' type='table' />
+            </properties>
+          </object>
+          <object caption='ft_ticket' id='ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733'>
+            <properties context=''>
+              <relation connection='postgres.0v78oom09l1vnz1e2sieb19nedm9' name='ft_ticket' table='[exam202201].[ft_ticket]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733' table='[Extract].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[idcustomer]' />
+              <expression op='[id (dt_customer)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[id (dt_date1)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295' unique-key='true' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='dt_date (exam202201.dt_date)_947DF2E7E0754A2DA17D683931B04158' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[iddateofbirth]' />
+              <expression op='[id (dt_date)]' />
+            </expression>
+            <first-end-point object-id='dt_customer (exam202201.dt_customer)_B2C97E11271E4E299FA3EC667683DEAA' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='dt_date (exam202201.dt_date)_CA583EA55F604E25BEEBC977B2A9CCCA' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[idflight]' />
+              <expression op='[id]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='dt_flight (exam202201.dt_flight)_48C3579D59E341198C516ADA7386B295' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Foglio 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ft_ticket (exam202201.ft_ticket)+ (biexam)' name='federated.052yu6a0h0fyjm14bik7d0f96o7q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.052yu6a0h0fyjm14bik7d0f96o7q'>
+            <column caption='TotalDelay' datatype='integer' name='[Calculation_977281187146940425]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[delayonarrival]+[delayondeparture]' />
+            </column>
+            <column caption='TotalDelay (bin)' datatype='integer' name='[TotalDelay (contenitore)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_977281187146940425]' peg='0' size='5' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='ft_ticket' datatype='integer' name='[__tableau_internal_object_id__].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='ft_ticket' datatype='table' name='[__tableau_internal_object_id__].[ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Delayonarrival' datatype='integer' name='[delayonarrival]' role='measure' type='ordinal' />
+            <column caption='Delayondeparture' datatype='integer' name='[delayondeparture]' role='measure' type='ordinal' />
+            <column-instance column='[TotalDelay (contenitore)]' derivation='None' name='[none:TotalDelay (contenitore):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[priority]' derivation='None' name='[none:priority:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Priority' datatype='string' name='[priority]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.052yu6a0h0fyjm14bik7d0f96o7q].[none:priority:nk]' />
+              <text column='[federated.052yu6a0h0fyjm14bik7d0f96o7q].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.052yu6a0h0fyjm14bik7d0f96o7q].[none:TotalDelay (contenitore):ok]</rows>
+        <cols>[federated.052yu6a0h0fyjm14bik7d0f96o7q].[__tableau_internal_object_id__].[cnt:ft_ticket (exam202201.ft_ticket)_5D81B2A482594CB394688BCD3B282733:qk]</cols>
+      </table>
+      <simple-id uuid='{4ACCFE19-A08C-483C-AB67-28A3713D0813}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Foglio 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.052yu6a0h0fyjm14bik7d0f96o7q].[none:priority:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.052yu6a0h0fyjm14bik7d0f96o7q].[none:TotalDelay (contenitore):ok]</field>
+            <field>[federated.052yu6a0h0fyjm14bik7d0f96o7q].[none:priority:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{533DF883-445F-4C0E-80E6-5176B301C22E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Foglio 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

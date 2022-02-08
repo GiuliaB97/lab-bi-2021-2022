@@ -1,0 +1,12 @@
+server: 137.204.78.85
+porta: 5432
+db: bi
+usr Gallinucci: bi
+password Gallinucci: bi00_2021
+
+
+
+Esame
+db: biexam
+usr: biexam
+password: 202201flights
